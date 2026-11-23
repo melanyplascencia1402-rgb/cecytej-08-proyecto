@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Inicio | 30 aniversario CECyTEJ 08{% endblock %}
+{% block content %}
+<section class="hero home-hero">
+  <div class="hero-text">
+    <span class="kicker">1995 — 2025 · ANIVERSARIO</span>
+    <h1>30 años formando generaciones, <em>construyendo oportunidades</em></h1>
+    <p class="hero-welcome">¡Bienvenidos a la celebración de nuestra historia! Conoce los recuerdos, logros y sueños de la comunidad CECyTEJ Plantel 08.</p>
+    <a class="gold-button" href="{{ url_for('historia') }}">Descubre nuestra historia <span>→</span></a>
+  </div>
+  <div class="hero-visual">
+    <div class="anniversary-seal"><span>CECyTEJ</span><strong>30</strong><b>AÑOS</b><small>PLANTEL 08</small></div>
+    <div class="campus-photo">
+    </div>
+  </div>
+</section>
+<section class="quick-links">
+  <a href="{{ url_for('historia') }}"><span>01</span><b>Nuestra historia</b><small>Tres décadas de transformación</small></a>
+  <a href="{{ url_for('voces') }}"><span>02</span><b>Voces que dejan huella</b><small>Nuestra comunidad</small></a>
+  <a href="{{ url_for('orgullo') }}"><span>03</span><b>Orgullo CECyTEJ</b><small>Logros, talento y proyectos</small></a>
+  <a href="{{ url_for('eventos') }}"><span>04</span><b>Celebremos juntos</b><small>30 años de orgullo y tradición</small></a>
+  <a href="{{ url_for('futuro') }}"><span>05</span><b>Nuestro futuro</b><small>Los próximos 30 años</small></a>
+</section>
+<section class="welcome-strip"><span class="gold-star">✦</span><div><b>Una historia que nos une</b><p>Celebramos el camino recorrido y todo lo que todavía podemos construir juntos.</p></div></section>
+{% endblock %}
