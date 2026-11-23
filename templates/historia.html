@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Nuestra historia | CECyTEJ 08{% endblock %}
+{% block content %}
+<section class="page-heading"><span class="kicker">PANTALLA 02 · NUESTRA HISTORIA</span><h1>Tres décadas de transformación</h1><p>El Plantel 08 Ixtlahuacán del Río fue fundado en 1995, con el objetivo de brindar educación de calidad.</p></section>
+<section class="timeline-section">
+  <h2>Una historia que sigue creciendo</h2>
+  <div class="timeline">
+    <article><span class="year">1995</span><div><h3>Inicio del plantel</h3><p>Comienza la historia del CECyTEJ Plantel 08 en Ixtlahuacán del Río.</p></div></article>
+    <article><span class="year">2005</span><div><h3>Nuevas instalaciones</h3><p>La comunidad escolar continúa creciendo y mejorando sus espacios.</p></div></article>
+    <article><span class="year">2015</span><div><h3>Mayor oferta educativa</h3><p>Se fortalecen las oportunidades de formación para las y los estudiantes.</p></div></article>
+    <article><span class="year">2025</span><div><h3>30 años de historia</h3><p>Tres décadas de aprendizajes, experiencias y generaciones.</p></div></article>
+  </div>
+</section>
+<section class="comparison photo-comparison">
+  <article class="comparison-photo">
+    <span class="kicker">ANTES</span>
+    <img src="{{ url_for('static', filename='img/plantel_antes.jpeg') }}" alt="Fotografía del plantel CECyTEJ 08, antes">
+    <p>Así se veía el plantel en una etapa anterior.</p>
+  </article>
+  <article class="comparison-photo">
+    <span class="kicker">AHORA</span>
+    <img src="{{ url_for('static', filename='img/plantel_ahora.jpeg') }}" alt="Fotografía actual del plantel CECyTEJ 08">
+    <p>Así luce actualmente una de las áreas del plantel.</p>
+  </article>
+</section>
+<section class="history-bottom">
+  <div><h2>Cambios y mejoras</h2><p>Las fotografías permiten observar distintas etapas de las instalaciones del plantel.</p></div>
+  <div><h2>Recuerdos y eventos clave</h2><p>Generaciones, actividades escolares, proyectos y encuentros que forman parte de nuestra memoria colectiva.</p></div>
+  <div><h2>Una comunidad en crecimiento</h2><p>La historia del plantel se construye con el esfuerzo de estudiantes, docentes, familias y personal educativo.</p></div>
+</section>
+{% endblock %}

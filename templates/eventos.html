@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Celebremos juntos | CECyTEJ 08
+<section class="activity-gallery">
+  <div class="activity-gallery-heading">
+    <span class="kicker">VIDA ESCOLAR</span>
+    <h2>Actividades de nuestra comunidad</h2>
+    <p>La convivencia y la participación de nuestros estudiantes también forman parte de la historia del plantel.</p>
+  </div>
+  <figure class="activity-photo">
+    <img src="{{ url_for('static', filename='img/actividad_estudiantes.jpeg') }}" alt="Estudiantes del CECyTEJ Plantel 08 participando en una actividad escolar">
+    <figcaption>Estudiantes del Plantel 08 compartiendo una actividad en comunidad.</figcaption>
+  </figure>
+</section>
+{% endblock %}
+{% block content %}
+<section class="page-heading"><span class="kicker">PANTALLA 05 · PROGRAMA DE ANIVERSARIO</span><h1>Celebremos juntos</h1><p>30 años de orgullo y tradición. Actividades para compartir, aprender y celebrar.</p></section>
+<div class="event-grid">
+  <article class="event-card"><div class="event-pic">💡<small>Imagen del evento</small></div><div class="event-body"><span class="event-date">NOV · 09:00 AM</span><h2>Expo CECyTEJ</h2><p>Exposición de proyectos tecnológicos realizados por estudiantes.</p><small>📍 Lugar: Plantel 08 (confirmar)</small><button onclick="eventInfo('Expo CECyTEJ')">Ver actividad</button></div></article>
+  <article class="event-card"><div class="event-pic">🎭<small>Imagen del evento</small></div><div class="event-body"><span class="event-date">NOV· 05:00 PM</span><h2>Festival cultural</h2><p>Presentaciones de danza, música y teatro por alumnos.</p><small>📍 Lugar: Plantel 08 (confirmar)</small><button onclick="eventInfo('Festival cultural')">Ver actividad</button></div></article>
+  <article class="event-card"><div class="event-pic">⚽<small>Imagen del evento</small></div><div class="event-body"><span class="event-date">NOV · 08:00 AM</span><h2>Torneo deportivo</h2><p>Encuentros amistosos de fútbol, voleibol y básquetbol.</p><small>📍 Lugar: Plantel 08 (confirmar)</small><button onclick="eventInfo('Torneo deportivo')">Ver actividad</button></div></article>
+  <article class="event-card"><div class="event-pic">🎤<small>Imagen del evento</small></div><div class="event-body"><span class="event-date">NOV · 10:00 AM</span><h2>Conferencias inspiradoras</h2><p>Egresados invitados comparten experiencias y consejos con estudiantes.</p><small>📍 Lugar: Plantel 08 (confirmar)</small><button onclick="eventInfo('Conferencias inspiradoras')">Ver actividad</button></div></article>
+  <article class="event-card"><div class="event-pic">🎂<small> evento</small></div><div class="event-body"><span class="event-date">NOV · 12:00 PM</span><h2>Encuentro de generaciones</h2><p>Convivencia con estudiantes, egresados, familias y personal del plantel.</p><small>📍 Lugar: Plantel 08 (confirmar)</small><button onclick="eventInfo('Encuentro de generaciones')">Ver actividad</button></div></article>
+</div>
+<div class="invitation"><span>✦</span><div><h2>¡Tu asistencia hace historia!</h2><p>Consulta con el plantel la fecha, horario, lugar y registro definitivo de cada actividad.</p></div></div>
+
+<section class="activity-gallery">
+  <div class="activity-gallery-heading">
+    <span class="kicker">VIDA ESCOLAR</span>
+    <h2>Actividades de nuestra comunidad</h2>
+    <p>La convivencia y la participación de nuestros estudiantes también forman parte de la historia del plantel.</p>
+  </div>
+  <figure class="activity-photo">
+    <img src="{{ url_for('static', filename='img/actividad_estudiantes.jpeg') }}" alt="Estudiantes del CECyTEJ Plantel 08 participando en una actividad escolar">
+    <figcaption>Estudiantes del Plantel 08 compartiendo una actividad en comunidad.</figcaption>
+  </figure>
+</section>
+{% endblock %}

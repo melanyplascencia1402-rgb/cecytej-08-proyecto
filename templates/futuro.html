@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Nuestro futuro | CECyTEJ 08{% endblock %}
+{% block content %}
+<section class="future-hero"><span class="kicker">PANTALLA 06 · LOS PRÓXIMOS 30 AÑOS</span><h1>¿Cómo imaginas nuestra escuela?</h1><p>Soñamos con una escuela que siga creciendo, innovando y ofreciendo oportunidades para todas las generaciones.</p></section>
+<section class="future-cards">
+  <article><span>01</span><h2>Visión a 30 años</h2><p>Ser una comunidad educativa reconocida por su calidad, innovación y compromiso con el desarrollo de la región.</p></article>
+  <article><span>02</span><h2>Mejoras que imaginamos</h2><p>Más espacios de aprendizaje, laboratorios equipados, áreas verdes y mejores instalaciones.</p></article>
+  <article><span>03</span><h2>Tecnología educativa</h2><p>Herramientas digitales, conectividad y recursos tecnológicos que apoyen el aprendizaje.</p></article>
+  <article><span>04</span><h2>Nuestras metas</h2><p>Impulsar proyectos, fortalecer la formación integral y abrir nuevas oportunidades para los estudiantes.</p></article>
+  <article><span>05</span><h2>Compromiso ambiental y social</h2><p>Cuidar el entorno, ahorrar recursos, mantener espacios limpios y participar en acciones comunitarias.</p></article>
+</section>
+<section class="message-panel">
+  <div class="message-intro"><span class="kicker">TU VOZ CUENTA</span><h2>Mi mensaje para el futuro</h2><p>Comparte una propuesta para que nuestra escuela siga dejando huella.</p><div class="future-phrase">“Juntos construimos el futuro”.</div></div>
+  <form class="message-form" method="POST">
+    <label>Nombre<input type="text" name="nombre" placeholder="Escribe tu nombre" required></label>
+    <label>Grupo<input type="text" name="grupo" placeholder="Ej. 3.º A" required></label>
+    <label>Tu mensaje<textarea name="mensaje" rows="4" placeholder="¿Qué te gustaría mejorar de nuestra escuela?" required></textarea></label>
+    <button class="gold-button" type="submit">Enviar mi mensaje ➤</button>
+  </form>
+</section>
+{% endblock %}
